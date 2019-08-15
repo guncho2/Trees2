@@ -1,0 +1,32 @@
+eduardos-MBP:Trees2 eduardolowensohn$ ruby benchmark.rb
+       user     system      total        real
+tree insert  0.044010   0.000772   0.044782 (  0.045530)
+heap insert  0.020191   0.000537   0.020728 (  0.021086)
+       user     system      total        real
+tree find  0.000023   0.000008   0.000031 (  0.000034)
+heap find  0.000009   0.000000   0.000009 (  0.000010)
+       user     system      total        real
+tree delete  0.000016   0.000009   0.000025 (  0.000020)
+heap delete  0.000007   0.000001   0.000008 (  0.000008)
+
+
+
+
+
+eduardos-MBP:heap eduardolowensohn$ rspec binary_heap_spec.rb
+.................
+
+Finished in 0.01432 seconds (files took 0.18821 seconds to load)
+17 examples, 0 failures
+
+
+
+duardos-MBP:binary_tree eduardolowensohn$ rspec binary_search_tree_spec.rb
+......................
+
+Finished in 0.01888 seconds (files took 0.23798 seconds to load)
+22 examples, 0 failures
+
+
+
+
