@@ -9,6 +9,8 @@ heap find  0.000009   0.000000   0.000009 (  0.000010)
 tree delete  0.000016   0.000009   0.000025 (  0.000020)
 heap delete  0.000007   0.000001   0.000008 (  0.000008)
 
+Inserting, finding and deleting is much faster at the 
+heap than with a normal binary tree. 
 
 
 
@@ -29,4 +31,25 @@ Finished in 0.01888 seconds (files took 0.23798 seconds to load)
 
 
 
+When would you use a Binary Search Tree and why?
 
+-A Binary Search tree is probably best to use if the data needs to be structured
+and sorted in a very exact manner. Every left-right child node in a BST is sorted
+according to value, whereas in a heap the only specific structure necessary is
+that parent node values must be higher (or lower, in cases of a min binary heap)
+than their children.
+The main difference on binary tree are the balance and unbalance binary tree.
+On the balanced the childrens are sorted ina away that are even on the same lavel. I its unbalance,
+the algorithm interchange the items in a way there will be the same quantity of items in
+at the same level. The resultants will be that access to any of the items will be much faster
+because the search will not have to go many up or downs for different levels.
+
+
+When would you use an Heap and why?
+
+If speed of insertion or finding is the most important element to you, it would
+probably be best to use a heap structure.
+
+Heap is usefull when you need a fast access to the max or minimun item, because that item will always be
+the first item on the array or root of the tree.
+Is good gor schedule, priority queues, 
